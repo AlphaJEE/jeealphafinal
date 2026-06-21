@@ -27,58 +27,43 @@ export default function NeetPage() {
     setResult(prev => ({ ...prev, label: 'Calculating...' }));
 
     try {
-      const payload = { marks: score, hopium_factor: hopium, exam: 'neet' };
-      const resp = await fetch('https://digiadvanced.com/directpredict.php', {
+      // Updated payload to match the new Cloudflare Worker
+      const payload = { score: score, hopiumVal: hopium }; 
+      
+      // Updated endpoint to point to your new Edge router
+      const resp = await fetch('https://predictor.akashdeep122a.workers.dev/api/neet', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload),
       });
 
-      if (!resp.ok) throw new Error('API error');
       const data = await resp.json();
-      if (data.error) throw new Error(data.error);
+      
+      // Worker returns success: false and an error string if validation fails (e.g. impossible scores)
+      if (!resp.ok || !data.success) {
+        throw new Error(data.error || 'Failed to connect to the Alpha Engine.');
+      }
 
+      // Map the new Worker JSON keys to your UI state
       setResult({
-        rank: data.predicted_rank || data.rank || computeNeetRank(score, hopium),
-        percentile: data.percentile ? parseFloat(data.percentile).toFixed(4) + '%' : null,
+        rank: data.rankRange,
+        percentile: data.percentile,
         label: 'NEET Predicted Rank',
-        bucket: data.bucket || 'Computed',
+        bucket: data.bucketText,
       });
-    } catch {
-      const rank = computeNeetRank(score, hopium);
+      
+    } catch (error: any) {
+      showToast('Prediction Error', error.message, 'error');
       setResult({
-        rank,
+        rank: null,
         percentile: null,
-        label: 'NEET Predicted Rank (Local)',
-        bucket: 'Local Engine',
+        label: 'Calculation Failed',
+        bucket: 'Error',
       });
     } finally {
       setLoading(false);
     }
   };
-
-  function computeNeetRank(score: number, hopium: number): string {
-    const TOTAL = 2279000;
-    let pctile = 0;
-    if (score >= 720) pctile = 99.9998;
-    else if (score >= 700) pctile = 99.99;
-    else if (score >= 680) pctile = 99.95;
-    else if (score >= 650) pctile = 99.8;
-    else if (score >= 600) pctile = 99.0;
-    else if (score >= 550) pctile = 97.0;
-    else if (score >= 500) pctile = 93.0;
-    else if (score >= 450) pctile = 85.0;
-    else if (score >= 400) pctile = 72.0;
-    else if (score >= 350) pctile = 58.0;
-    else if (score >= 300) pctile = 43.0;
-    else if (score >= 250) pctile = 30.0;
-    else if (score >= 200) pctile = 20.0;
-    else pctile = 10.0;
-
-    const factor = 1 - hopium * 0.4;
-    const rank = Math.max(1, Math.round((1 - pctile / 100) * TOTAL * factor));
-    return rank.toLocaleString('en-IN');
-  }
 
   return (
     <div className="bg-[#f9f9f0] dark:bg-[#0f0e0b] min-h-screen">
