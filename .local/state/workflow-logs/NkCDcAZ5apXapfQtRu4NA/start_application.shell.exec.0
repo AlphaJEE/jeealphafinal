@@ -1,0 +1,78 @@
+
+> alphajee@2.0.0 dev
+> next dev --port 5000
+
+[1G[0K  [1m[38;2;173;127;168m▲ Next.js 14.2.29[39m[22m
+  - Local:        http://localhost:5000
+
+ [32m[1m✓[22m[39m Starting...
+[35m[1mAttention[22m[39m: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+[36mhttps://nextjs.org/telemetry[39m
+
+ [32m[1m✓[22m[39m Ready in 1566ms
+ [37m[1m○[22m[39m Compiling / ...
+ [32m[1m✓[22m[39m Compiled / in 3.3s (517 modules)
+ GET / [32m200[39m in 3593ms
+ GET / [32m200[39m in 38ms
+ [37m[1m○[22m[39m Compiling /_not-found ...
+ [32m[1m✓[22m[39m Compiled /_not-found in 507ms (520 modules)
+ GET /favicon.png [33m404[39m in 672ms
+ [32m[1m✓[22m[39m Compiled in 516ms (520 modules)
+ GET / [32m200[39m in 80ms
+ [32m[1m✓[22m[39m Compiled /percentile in 272ms (514 modules)
+ GET /percentile [32m200[39m in 378ms
+ [32m[1m✓[22m[39m Compiled /legends in 342ms (517 modules)
+ GET /legends [32m200[39m in 528ms
+ [37m[1m○[22m[39m Compiling /donate ...
+ [32m[1m✓[22m[39m Compiled /donate in 5.5s (523 modules)
+ GET /donate [32m200[39m in 6459ms
+ GET /donate [32m200[39m in 116ms
+ [37m[1m○[22m[39m Compiling /analytics ...
+ [32m[1m✓[22m[39m Compiled /analytics in 1612ms (537 modules)
+ GET /analytics [32m200[39m in 2219ms
+ [37m[1m○[22m[39m Compiling /advanced ...
+ [32m[1m✓[22m[39m Compiled /advanced in 2.7s (543 modules)
+ GET / [32m200[39m in 1131ms
+ GET /advanced [32m200[39m in 3869ms
+ [37m[1m○[22m[39m Compiling /neet ...
+ [32m[1m✓[22m[39m Compiled /neet in 1284ms (549 modules)
+ GET /neet [32m200[39m in 1758ms
+ [32m[1m✓[22m[39m Compiled in 3.9s (562 modules)
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ GET / [32m200[39m in 360ms
+ [32m[1m✓[22m[39m Compiled in 1060ms (555 modules)
+ GET / [32m200[39m in 126ms
+ [32m[1m✓[22m[39m Compiled /updates in 278ms (547 modules)
+ GET /updates [32m200[39m in 447ms
+ [32m[1m✓[22m[39m Compiled /team in 335ms (551 modules)
+ GET /team [32m200[39m in 513ms
+ [32m[1m✓[22m[39m Compiled in 760ms (565 modules)
+ GET / [32m200[39m in 95ms
+ GET / [32m200[39m in 78ms
+ [37m[1m○[22m[39m Compiling /percentile ...
+ [32m[1m✓[22m[39m Compiled /percentile in 506ms (279 modules)
+ [37m[1m○[22m[39m Compiling /_not-found ...
+ [32m[1m✓[22m[39m Compiled /_not-found in 740ms (547 modules)
+ GET /adv-data/advdata.json [33m404[39m in 918ms
+ GET /adv-data/advdata.json [33m404[39m in 96ms
+ [32m[1m✓[22m[39m Compiled /updates in 193ms (280 modules)
+ [32m[1m✓[22m[39m Compiled /legends in 303ms (279 modules)
+ GET / [32m200[39m in 123ms
+ GET /neet [32m200[39m in 49ms
+ [37m[1m○[22m[39m Compiling /updates ...
+ [32m[1m✓[22m[39m Compiled /updates in 660ms (275 modules)
+ [32m[1m✓[22m[39m Compiled in 2.1s (554 modules)
+ [32m[1m✓[22m[39m Compiled in 840ms (554 modules)
+ [32m[1m✓[22m[39m Compiled in 317ms (283 modules)
+ [32m[1m✓[22m[39m Compiled in 393ms (283 modules)
+ [32m[1m✓[22m[39m Compiled in 225ms (283 modules)
+ [32m[1m✓[22m[39m Compiled in 206ms (283 modules)
+ [32m[1m✓[22m[39m Compiled in 1390ms (554 modules)
+ [32m[1m✓[22m[39m Compiled in 735ms (554 modules)
+ GET / [32m200[39m in 267ms
+ GET / [32m200[39m in 36ms
+ GET / [32m200[39m in 46ms
+[?25h
+[1G[0K⠙[1G[0K

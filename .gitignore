@@ -1,0 +1,37 @@
+# Environment Secrets
+.env
+.env.local
+
+# Node.js
+node_modules/
+package-lock.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+fetcher.py
+
+# IDEs & Build Tools
+.vscode/
+.vercel/
+.wrangler/
+
+# Next.js build output
+.next/
+out/
+# backend_predictor/
+
+# Large Data Files (Protecting your JEE Dataset)
+# jee_live_data.json
+test_payload.json
+duplicates/
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+wrangler.toml
+.vercel

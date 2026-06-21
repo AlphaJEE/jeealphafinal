@@ -1,0 +1,24 @@
+
+> alphajee@2.0.0 dev
+> next dev --port 5000
+
+[1G[0K  [1m[38;2;173;127;168m▲ Next.js 14.2.29[39m[22m
+  - Local:        http://localhost:5000
+
+ [32m[1m✓[22m[39m Starting...
+ [32m[1m✓[22m[39m Ready in 3.3s
+ [37m[1m○[22m[39m Compiling /neet ...
+ [32m[1m✓[22m[39m Compiled / in 8.4s (525 modules)
+ GET /neet [32m200[39m in 8658ms
+ GET / [32m200[39m in 7412ms
+ GET / [32m200[39m in 36ms
+ [37m[1m○[22m[39m Compiling /analytics ...
+ [32m[1m✓[22m[39m Compiled /analytics in 989ms (525 modules)
+ GET /analytics [32m200[39m in 1168ms
+ [32m[1m✓[22m[39m Compiled /legends in 276ms (531 modules)
+ GET /legends [32m200[39m in 392ms
+ [32m[1m✓[22m[39m Compiled /percentile in 438ms (543 modules)
+ GET /advanced [32m200[39m in 574ms
+ GET /percentile [32m200[39m in 483ms
+ GET / [32m200[39m in 54ms
+ [32m[1m✓[22m[39m Compiled /updates in 498ms (549 modules)

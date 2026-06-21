@@ -1,0 +1,53 @@
+<div class="relative w-full z-50 pb-2 lg:pb-0">
+    <div class="max-w-[1600px] mx-auto relative px-4 md:px-0">
+        
+        <!-- Header Container -->
+        <div class="flex flex-col lg:flex-row justify-between items-center gap-4 lg:gap-0 mt-4 lg:mt-0">
+            
+            <!-- Logo & Actions (Mobile) -->
+            <div class="flex justify-between items-center w-full lg:w-auto">
+                <a href="index.html"><div class="flex items-center gap-3">
+                    <img src="logo.png" alt="AlphaJEE Logo" class="h-8 max-h-8 w-auto object-contain shrink-0">
+                    <div class="font-black text-xl tracking-wide shrink-0"><span class="text-[var(--text-primary)]">ALPHA</span><span class="text-[var(--text-secondary)]">JEE</span></div>
+                </div></a>
+
+                <!-- Theme Toggle (Visible on Mobile) -->
+                <button id="theme-toggle-mobile" class="lg:hidden p-2 rounded-xl bg-[var(--card-bg)] border border-[var(--border-color)] hover:bg-[var(--card-hover)] transition-all text-[var(--text-secondary)] hover:text-[var(--text-primary)]">
+                    <svg id="theme-toggle-dark-icon-mobile" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                    <svg id="theme-toggle-light-icon-mobile" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                </button>
+            </div>
+
+            <!-- Scrollable Nav Links -->
+            <div class="flex overflow-x-auto w-full lg:w-auto gap-3 lg:gap-8 pb-3 lg:pb-0 text-[13px] lg:text-[15px] font-bold text-[var(--text-secondary)] custom-scrollbar items-center px-1 lg:px-0">
+                <a href="index.html" class="nav-link whitespace-nowrap px-4 py-2.5 rounded-xl bg-[var(--bg-secondary)] border border-[var(--border-color)] shadow-sm lg:bg-transparent lg:shadow-none lg:px-0 lg:border-none lg:rounded-none hover:text-[var(--text-primary)] transition-colors">Home</a>
+                <!-- <a href="ourteam.html" class="nav-link whitespace-nowrap px-4 py-2.5 rounded-xl bg-[var(--bg-secondary)] border border-[var(--border-color)] shadow-sm lg:bg-transparent lg:shadow-none lg:px-0 lg:border-none lg:rounded-none hover:text-[var(--text-primary)] transition-colors">Our Team</a> -->
+                <a href="legendspage.html" class="nav-link whitespace-nowrap px-4 py-2.5 rounded-xl bg-[var(--bg-secondary)] border border-[var(--border-color)] shadow-sm lg:bg-transparent lg:shadow-none lg:px-0 lg:border-none lg:rounded-none hover:text-[var(--text-primary)] transition-colors">Legends</a>
+                <!-- <a href="janpercentile.html" class="nav-link whitespace-nowrap px-4 py-2.5 rounded-xl bg-[var(--bg-secondary)] border border-[var(--border-color)] shadow-sm lg:bg-transparent lg:shadow-none lg:px-0 lg:border-none lg:rounded-none hover:text-[var(--text-primary)] transition-colors">Jan Analytics</a> -->
+
+                <a href="advanalytics.html" class="nav-link whitespace-nowrap px-4 py-2.5 rounded-xl bg-[var(--bg-secondary)] border border-[var(--border-color)] shadow-sm lg:bg-transparent lg:shadow-none lg:px-0 lg:border-none lg:rounded-none hover:text-[var(--text-primary)] transition-colors">JEEAdv Analytics</a>
+                <a href="advpredict.html" class="nav-link whitespace-nowrap px-4 py-2.5 rounded-xl bg-[var(--bg-secondary)] border border-[var(--border-color)] shadow-sm lg:bg-transparent lg:shadow-none lg:px-0 lg:border-none lg:rounded-none hover:text-[var(--text-primary)] transition-colors">JEEAdv Predictor</a>
+
+
+                
+                <a href="youtube-updates.html" class="nav-link whitespace-nowrap px-4 py-2.5 rounded-xl bg-[var(--bg-secondary)] border border-[var(--border-color)] shadow-sm lg:bg-transparent lg:shadow-none lg:px-0 lg:border-none lg:rounded-none hover:text-[var(--text-primary)] transition-colors">Youtube</a>
+                <!-- <a href="donate.html" class="nav-link whitespace-nowrap px-4 py-2.5 rounded-xl bg-[var(--bg-secondary)] border border-[var(--border-color)] shadow-sm lg:bg-transparent lg:shadow-none lg:px-0 lg:border-none lg:rounded-none hover:text-[var(--text-primary)] transition-colors">Support us</a> -->
+                
+                <!-- Support Us Chip (Visible on Mobile) -->
+                <button id="support-button-mobile" class="lg:hidden whitespace-nowrap px-5 py-2 bg-[#00d084] text-[#0f1115] hover:bg-[#00e893] rounded-xl font-bold uppercase text-[12px] tracking-widest shadow-[0_0_15px_rgba(0,208,132,0.2)] transition-all shrink-0">Support Us</button>
+            </div>
+
+            <!-- Desktop Actions -->
+            <div class="flex items-center gap-3 md:gap-4 shrink-0">
+                <button id="theme-toggle" class="hidden lg:block p-2 rounded-xl bg-[var(--card-bg)] border border-[var(--border-color)] hover:bg-[var(--card-hover)] transition-all text-[var(--text-secondary)] hover:text-[var(--text-primary)]" title="Toggle Light/Dark Mode">
+                    <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                    <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                </button>
+                
+                <button id="support-button" class="hidden lg:block bg-[#00d084] hover:bg-[#00e893] text-[#0f1115] px-6 py-2 rounded-xl font-bold text-[14px] transition-all shadow-[0_0_15px_rgba(0,208,132,0.2)] hover:-translate-y-0.5">
+                    Support Us
+                </button> 
+            </div>
+        </div>
+    </div>
+</div>

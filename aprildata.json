@@ -1,0 +1,708 @@
+{
+        "applicationNumber": "260310882735",
+        "candidateName": "AKASHDEEP SINGH",
+        "rollNo": "UP090207167",
+        "examShift": "04 - S1",
+        "examShiftToDisplay": "4 April - S1",
+        "totalMarks": 163,
+        "totalPossibleScore": 300,
+        "physicsMarks": 60,
+        "physicsCorrect": 16,
+        "physicsIncorrect": 4,
+        "totalPhysicsMarks": 100,
+        "totalPhysicsQuestions": 25,
+        "chemistryMarks": 68,
+        "chemistryCorrect": 18,
+        "chemistryIncorrect": 4,
+        "totalChemistryMarks": 100,
+        "totalChemistryQuestions": 25,
+        "mathematicsMarks": 35,
+        "mathematicsCorrect": 9,
+        "mathematicsIncorrect": 1,
+        "totalMathematicsMarks": 100,
+        "totalMathematicsQuestions": 25,
+        "accuracy": 82.69,
+        "physicsAccuracy": 80,
+        "chemistryAccuracy": 81.82,
+        "mathematicsAccuracy": 90,
+        "positiveScore": 172,
+        "negativeScore": 9,
+        "comparativeScores": [
+            {
+                "_id": null,
+                "avgPhysicsMarks": null,
+                "avgChemistryMarks": null,
+                "avgMathematicsMarks": null,
+                "avgProvisionalPhysicsMarks": 40,
+                "avgProvisionalChemistryMarks": 32,
+                "avgProvisionalMathematicsMarks": 22,
+                "avgPhysicsAccuracy": null,
+                "avgChemistryAccuracy": null,
+                "avgMathematicsAccuracy": null,
+                "avgProvisionalPhysicsAccuracy": 67,
+                "avgProvisionalChemistryAccuracy": 53,
+                "avgProvisionalMathematicsAccuracy": 62,
+                "avgAccuracy": null,
+                "avgProvisionalAccuracy": 60,
+                "segments": {
+                    "0-25": {
+                        "count": 5,
+                        "provisionalCount": 0
+                    },
+                    "25-50": {
+                        "count": 0,
+                        "provisionalCount": 0
+                    },
+                    "50-75": {
+                        "count": 0,
+                        "provisionalCount": 2
+                    },
+                    "75-100": {
+                        "count": 0,
+                        "provisionalCount": 0
+                    },
+                    "100-125": {
+                        "count": 0,
+                        "provisionalCount": 3
+                    },
+                    "125-150": {
+                        "count": 0,
+                        "provisionalCount": 0
+                    },
+                    "150-175": {
+                        "count": 0,
+                        "provisionalCount": 0
+                    },
+                    "175-200": {
+                        "count": 0,
+                        "provisionalCount": 0
+                    },
+                    "200-225": {
+                        "count": 0,
+                        "provisionalCount": 0
+                    },
+                    "225-250": {
+                        "count": 0,
+                        "provisionalCount": 0
+                    },
+                    "250-275": {
+                        "count": 0,
+                        "provisionalCount": 0
+                    },
+                    "275-300": {
+                        "count": 0,
+                        "provisionalCount": 0
+                    }
+                }
+            },
+            {
+                "_id": "02 - S1",
+                "avgPhysicsMarks": null,
+                "avgChemistryMarks": null,
+                "avgMathematicsMarks": null,
+                "avgProvisionalPhysicsMarks": 39,
+                "avgProvisionalChemistryMarks": 36,
+                "avgProvisionalMathematicsMarks": 18,
+                "avgPhysicsAccuracy": null,
+                "avgChemistryAccuracy": null,
+                "avgMathematicsAccuracy": null,
+                "avgProvisionalPhysicsAccuracy": 65,
+                "avgProvisionalChemistryAccuracy": 63,
+                "avgProvisionalMathematicsAccuracy": 55,
+                "avgAccuracy": null,
+                "avgProvisionalAccuracy": 63,
+                "segments": {
+                    "0-25": {
+                        "count": 8925,
+                        "provisionalCount": 896
+                    },
+                    "25-50": {
+                        "count": 0,
+                        "provisionalCount": 1355
+                    },
+                    "50-75": {
+                        "count": 0,
+                        "provisionalCount": 1412
+                    },
+                    "75-100": {
+                        "count": 0,
+                        "provisionalCount": 1400
+                    },
+                    "100-125": {
+                        "count": 0,
+                        "provisionalCount": 1272
+                    },
+                    "125-150": {
+                        "count": 0,
+                        "provisionalCount": 1136
+                    },
+                    "150-175": {
+                        "count": 0,
+                        "provisionalCount": 782
+                    },
+                    "175-200": {
+                        "count": 0,
+                        "provisionalCount": 393
+                    },
+                    "200-225": {
+                        "count": 0,
+                        "provisionalCount": 183
+                    },
+                    "225-250": {
+                        "count": 0,
+                        "provisionalCount": 80
+                    },
+                    "250-275": {
+                        "count": 0,
+                        "provisionalCount": 12
+                    },
+                    "275-300": {
+                        "count": 0,
+                        "provisionalCount": 4
+                    }
+                }
+            },
+            {
+                "_id": "02 - S2",
+                "avgPhysicsMarks": null,
+                "avgChemistryMarks": null,
+                "avgMathematicsMarks": null,
+                "avgProvisionalPhysicsMarks": 35,
+                "avgProvisionalChemistryMarks": 30,
+                "avgProvisionalMathematicsMarks": 19,
+                "avgPhysicsAccuracy": null,
+                "avgChemistryAccuracy": null,
+                "avgMathematicsAccuracy": null,
+                "avgProvisionalPhysicsAccuracy": 59,
+                "avgProvisionalChemistryAccuracy": 56,
+                "avgProvisionalMathematicsAccuracy": 57,
+                "avgAccuracy": null,
+                "avgProvisionalAccuracy": 58,
+                "segments": {
+                    "0-25": {
+                        "count": 8506,
+                        "provisionalCount": 1108
+                    },
+                    "25-50": {
+                        "count": 0,
+                        "provisionalCount": 1630
+                    },
+                    "50-75": {
+                        "count": 0,
+                        "provisionalCount": 1502
+                    },
+                    "75-100": {
+                        "count": 0,
+                        "provisionalCount": 1268
+                    },
+                    "100-125": {
+                        "count": 0,
+                        "provisionalCount": 1103
+                    },
+                    "125-150": {
+                        "count": 0,
+                        "provisionalCount": 791
+                    },
+                    "150-175": {
+                        "count": 0,
+                        "provisionalCount": 543
+                    },
+                    "175-200": {
+                        "count": 0,
+                        "provisionalCount": 302
+                    },
+                    "200-225": {
+                        "count": 0,
+                        "provisionalCount": 138
+                    },
+                    "225-250": {
+                        "count": 0,
+                        "provisionalCount": 81
+                    },
+                    "250-275": {
+                        "count": 0,
+                        "provisionalCount": 29
+                    },
+                    "275-300": {
+                        "count": 0,
+                        "provisionalCount": 11
+                    }
+                }
+            },
+            {
+                "_id": "04 - S1",
+                "avgPhysicsMarks": null,
+                "avgChemistryMarks": null,
+                "avgMathematicsMarks": null,
+                "avgProvisionalPhysicsMarks": 41,
+                "avgProvisionalChemistryMarks": 42,
+                "avgProvisionalMathematicsMarks": 13,
+                "avgPhysicsAccuracy": null,
+                "avgChemistryAccuracy": null,
+                "avgMathematicsAccuracy": null,
+                "avgProvisionalPhysicsAccuracy": 65,
+                "avgProvisionalChemistryAccuracy": 66,
+                "avgProvisionalMathematicsAccuracy": 53,
+                "avgAccuracy": null,
+                "avgProvisionalAccuracy": 64,
+                "segments": {
+                    "0-25": {
+                        "count": 9662,
+                        "provisionalCount": 798
+                    },
+                    "25-50": {
+                        "count": 0,
+                        "provisionalCount": 1317
+                    },
+                    "50-75": {
+                        "count": 0,
+                        "provisionalCount": 1483
+                    },
+                    "75-100": {
+                        "count": 0,
+                        "provisionalCount": 1540
+                    },
+                    "100-125": {
+                        "count": 0,
+                        "provisionalCount": 1525
+                    },
+                    "125-150": {
+                        "count": 0,
+                        "provisionalCount": 1344
+                    },
+                    "150-175": {
+                        "count": 0,
+                        "provisionalCount": 911
+                    },
+                    "175-200": {
+                        "count": 0,
+                        "provisionalCount": 453
+                    },
+                    "200-225": {
+                        "count": 0,
+                        "provisionalCount": 194
+                    },
+                    "225-250": {
+                        "count": 0,
+                        "provisionalCount": 66
+                    },
+                    "250-275": {
+                        "count": 0,
+                        "provisionalCount": 21
+                    },
+                    "275-300": {
+                        "count": 0,
+                        "provisionalCount": 10
+                    }
+                }
+            },
+            {
+                "_id": "04 - S2",
+                "avgPhysicsMarks": null,
+                "avgChemistryMarks": null,
+                "avgMathematicsMarks": null,
+                "avgProvisionalPhysicsMarks": 46,
+                "avgProvisionalChemistryMarks": 31,
+                "avgProvisionalMathematicsMarks": 21,
+                "avgPhysicsAccuracy": null,
+                "avgChemistryAccuracy": null,
+                "avgMathematicsAccuracy": null,
+                "avgProvisionalPhysicsAccuracy": 68,
+                "avgProvisionalChemistryAccuracy": 55,
+                "avgProvisionalMathematicsAccuracy": 62,
+                "avgAccuracy": null,
+                "avgProvisionalAccuracy": 62,
+                "segments": {
+                    "0-25": {
+                        "count": 9486,
+                        "provisionalCount": 622
+                    },
+                    "25-50": {
+                        "count": 0,
+                        "provisionalCount": 1359
+                    },
+                    "50-75": {
+                        "count": 0,
+                        "provisionalCount": 1583
+                    },
+                    "75-100": {
+                        "count": 0,
+                        "provisionalCount": 1583
+                    },
+                    "100-125": {
+                        "count": 0,
+                        "provisionalCount": 1425
+                    },
+                    "125-150": {
+                        "count": 0,
+                        "provisionalCount": 1162
+                    },
+                    "150-175": {
+                        "count": 0,
+                        "provisionalCount": 839
+                    },
+                    "175-200": {
+                        "count": 0,
+                        "provisionalCount": 481
+                    },
+                    "200-225": {
+                        "count": 0,
+                        "provisionalCount": 269
+                    },
+                    "225-250": {
+                        "count": 0,
+                        "provisionalCount": 120
+                    },
+                    "250-275": {
+                        "count": 0,
+                        "provisionalCount": 35
+                    },
+                    "275-300": {
+                        "count": 0,
+                        "provisionalCount": 8
+                    }
+                }
+            },
+            {
+                "_id": "05 - S1",
+                "avgPhysicsMarks": null,
+                "avgChemistryMarks": null,
+                "avgMathematicsMarks": null,
+                "avgProvisionalPhysicsMarks": 36,
+                "avgProvisionalChemistryMarks": 36,
+                "avgProvisionalMathematicsMarks": 20,
+                "avgPhysicsAccuracy": null,
+                "avgChemistryAccuracy": null,
+                "avgMathematicsAccuracy": null,
+                "avgProvisionalPhysicsAccuracy": 60,
+                "avgProvisionalChemistryAccuracy": 59,
+                "avgProvisionalMathematicsAccuracy": 60,
+                "avgAccuracy": null,
+                "avgProvisionalAccuracy": 60,
+                "segments": {
+                    "0-25": {
+                        "count": 9086,
+                        "provisionalCount": 887
+                    },
+                    "25-50": {
+                        "count": 0,
+                        "provisionalCount": 1537
+                    },
+                    "50-75": {
+                        "count": 0,
+                        "provisionalCount": 1551
+                    },
+                    "75-100": {
+                        "count": 0,
+                        "provisionalCount": 1463
+                    },
+                    "100-125": {
+                        "count": 0,
+                        "provisionalCount": 1197
+                    },
+                    "125-150": {
+                        "count": 0,
+                        "provisionalCount": 931
+                    },
+                    "150-175": {
+                        "count": 0,
+                        "provisionalCount": 695
+                    },
+                    "175-200": {
+                        "count": 0,
+                        "provisionalCount": 440
+                    },
+                    "200-225": {
+                        "count": 0,
+                        "provisionalCount": 213
+                    },
+                    "225-250": {
+                        "count": 0,
+                        "provisionalCount": 121
+                    },
+                    "250-275": {
+                        "count": 0,
+                        "provisionalCount": 44
+                    },
+                    "275-300": {
+                        "count": 0,
+                        "provisionalCount": 7
+                    }
+                }
+            },
+            {
+                "_id": "05 - S2",
+                "avgPhysicsMarks": null,
+                "avgChemistryMarks": null,
+                "avgMathematicsMarks": null,
+                "avgProvisionalPhysicsMarks": 42,
+                "avgProvisionalChemistryMarks": 7,
+                "avgProvisionalMathematicsMarks": 20,
+                "avgPhysicsAccuracy": null,
+                "avgChemistryAccuracy": null,
+                "avgMathematicsAccuracy": null,
+                "avgProvisionalPhysicsAccuracy": 66,
+                "avgProvisionalChemistryAccuracy": 28,
+                "avgProvisionalMathematicsAccuracy": 63,
+                "avgAccuracy": null,
+                "avgProvisionalAccuracy": 50,
+                "segments": {
+                    "0-25": {
+                        "count": 9335,
+                        "provisionalCount": 1180
+                    },
+                    "25-50": {
+                        "count": 0,
+                        "provisionalCount": 2055
+                    },
+                    "50-75": {
+                        "count": 0,
+                        "provisionalCount": 2233
+                    },
+                    "75-100": {
+                        "count": 0,
+                        "provisionalCount": 1818
+                    },
+                    "100-125": {
+                        "count": 0,
+                        "provisionalCount": 1172
+                    },
+                    "125-150": {
+                        "count": 0,
+                        "provisionalCount": 580
+                    },
+                    "150-175": {
+                        "count": 0,
+                        "provisionalCount": 223
+                    },
+                    "175-200": {
+                        "count": 0,
+                        "provisionalCount": 68
+                    },
+                    "200-225": {
+                        "count": 0,
+                        "provisionalCount": 6
+                    },
+                    "225-250": {
+                        "count": 0,
+                        "provisionalCount": 0
+                    },
+                    "250-275": {
+                        "count": 0,
+                        "provisionalCount": 0
+                    },
+                    "275-300": {
+                        "count": 0,
+                        "provisionalCount": 0
+                    }
+                }
+            },
+            {
+                "_id": "06 - S1",
+                "avgPhysicsMarks": null,
+                "avgChemistryMarks": null,
+                "avgMathematicsMarks": null,
+                "avgProvisionalPhysicsMarks": 33,
+                "avgProvisionalChemistryMarks": 31,
+                "avgProvisionalMathematicsMarks": 19,
+                "avgPhysicsAccuracy": null,
+                "avgChemistryAccuracy": null,
+                "avgMathematicsAccuracy": null,
+                "avgProvisionalPhysicsAccuracy": 60,
+                "avgProvisionalChemistryAccuracy": 56,
+                "avgProvisionalMathematicsAccuracy": 60,
+                "avgAccuracy": null,
+                "avgProvisionalAccuracy": 59,
+                "segments": {
+                    "0-25": {
+                        "count": 9143,
+                        "provisionalCount": 1092
+                    },
+                    "25-50": {
+                        "count": 0,
+                        "provisionalCount": 1720
+                    },
+                    "50-75": {
+                        "count": 0,
+                        "provisionalCount": 1696
+                    },
+                    "75-100": {
+                        "count": 0,
+                        "provisionalCount": 1433
+                    },
+                    "100-125": {
+                        "count": 0,
+                        "provisionalCount": 1210
+                    },
+                    "125-150": {
+                        "count": 0,
+                        "provisionalCount": 870
+                    },
+                    "150-175": {
+                        "count": 0,
+                        "provisionalCount": 561
+                    },
+                    "175-200": {
+                        "count": 0,
+                        "provisionalCount": 314
+                    },
+                    "200-225": {
+                        "count": 0,
+                        "provisionalCount": 136
+                    },
+                    "225-250": {
+                        "count": 0,
+                        "provisionalCount": 80
+                    },
+                    "250-275": {
+                        "count": 0,
+                        "provisionalCount": 28
+                    },
+                    "275-300": {
+                        "count": 0,
+                        "provisionalCount": 3
+                    }
+                }
+            },
+            {
+                "_id": "06 - S2",
+                "avgPhysicsMarks": null,
+                "avgChemistryMarks": null,
+                "avgMathematicsMarks": null,
+                "avgProvisionalPhysicsMarks": 46,
+                "avgProvisionalChemistryMarks": 33,
+                "avgProvisionalMathematicsMarks": 20,
+                "avgPhysicsAccuracy": null,
+                "avgChemistryAccuracy": null,
+                "avgMathematicsAccuracy": null,
+                "avgProvisionalPhysicsAccuracy": 68,
+                "avgProvisionalChemistryAccuracy": 57,
+                "avgProvisionalMathematicsAccuracy": 62,
+                "avgAccuracy": null,
+                "avgProvisionalAccuracy": 63,
+                "segments": {
+                    "0-25": {
+                        "count": 9449,
+                        "provisionalCount": 964
+                    },
+                    "25-50": {
+                        "count": 0,
+                        "provisionalCount": 1309
+                    },
+                    "50-75": {
+                        "count": 0,
+                        "provisionalCount": 1316
+                    },
+                    "75-100": {
+                        "count": 0,
+                        "provisionalCount": 1396
+                    },
+                    "100-125": {
+                        "count": 0,
+                        "provisionalCount": 1367
+                    },
+                    "125-150": {
+                        "count": 0,
+                        "provisionalCount": 1176
+                    },
+                    "150-175": {
+                        "count": 0,
+                        "provisionalCount": 855
+                    },
+                    "175-200": {
+                        "count": 0,
+                        "provisionalCount": 542
+                    },
+                    "200-225": {
+                        "count": 0,
+                        "provisionalCount": 285
+                    },
+                    "225-250": {
+                        "count": 0,
+                        "provisionalCount": 157
+                    },
+                    "250-275": {
+                        "count": 0,
+                        "provisionalCount": 61
+                    },
+                    "275-300": {
+                        "count": 0,
+                        "provisionalCount": 21
+                    }
+                }
+            },
+            {
+                "_id": "08 - S2",
+                "avgPhysicsMarks": null,
+                "avgChemistryMarks": null,
+                "avgMathematicsMarks": null,
+                "avgProvisionalPhysicsMarks": 33,
+                "avgProvisionalChemistryMarks": 33,
+                "avgProvisionalMathematicsMarks": 18,
+                "avgPhysicsAccuracy": null,
+                "avgChemistryAccuracy": null,
+                "avgMathematicsAccuracy": null,
+                "avgProvisionalPhysicsAccuracy": 63,
+                "avgProvisionalChemistryAccuracy": 55,
+                "avgProvisionalMathematicsAccuracy": 57,
+                "avgAccuracy": null,
+                "avgProvisionalAccuracy": 59,
+                "segments": {
+                    "0-25": {
+                        "count": 9011,
+                        "provisionalCount": 735
+                    },
+                    "25-50": {
+                        "count": 0,
+                        "provisionalCount": 1665
+                    },
+                    "50-75": {
+                        "count": 0,
+                        "provisionalCount": 1901
+                    },
+                    "75-100": {
+                        "count": 0,
+                        "provisionalCount": 1628
+                    },
+                    "100-125": {
+                        "count": 0,
+                        "provisionalCount": 1331
+                    },
+                    "125-150": {
+                        "count": 0,
+                        "provisionalCount": 858
+                    },
+                    "150-175": {
+                        "count": 0,
+                        "provisionalCount": 495
+                    },
+                    "175-200": {
+                        "count": 0,
+                        "provisionalCount": 232
+                    },
+                    "200-225": {
+                        "count": 0,
+                        "provisionalCount": 105
+                    },
+                    "225-250": {
+                        "count": 0,
+                        "provisionalCount": 52
+                    },
+                    "250-275": {
+                        "count": 0,
+                        "provisionalCount": 8
+                    },
+                    "275-300": {
+                        "count": 0,
+                        "provisionalCount": 1
+                    }
+                }
+            }
+        ],
+        "isProvisional": true,
+        "showComparativeData": true,
+        "totalQuestions": 75,
+        "totalCorrect": 43,
+        "totalIncorrect": 9,
+        "percentiles": []
+    }

@@ -1,0 +1,14 @@
+# AlphaJEE Aggressive Indexing Config
+User-agent: *
+Allow: /
+
+# Specific focus for the score subdomain
+Host: https://alphajee.online
+
+# Point Google directly to your maps for faster crawling
+Sitemap: https://alphajee.online/sitemap.xml
+Sitemap: https://score.alphajee.online/sitemap.xml
+Sitemap: https://jtestify.alphajee.online/sitemap.xml
+
+# Prevent crawling of development or temp files if you have any
+

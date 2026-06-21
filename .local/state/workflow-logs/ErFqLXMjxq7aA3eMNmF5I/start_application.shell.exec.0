@@ -1,0 +1,21 @@
+
+> alphajee@2.0.0 dev
+> rm -rf .next && next dev --port 5000
+
+[1G[0K  [1m[38;2;173;127;168m▲ Next.js 14.2.35[39m[22m
+  - Local:        http://localhost:5000
+
+ [32m[1m✓[22m[39m Starting...
+ [33m[1m⚠[22m[39m Found lockfile missing swc dependencies, patching...
+ [31m[1m⨯[22m[39m Failed to patch lockfile, please try uninstalling and reinstalling next in this workspace
+TypeError: Cannot read properties of undefined (reading 'os')
+    at fetchPkgInfo [90m(/home/runner/workspace/[39mnode_modules/[4mnext[24m/dist/lib/patch-incorrect-lockfile.js:73:25[90m)[39m
+[90m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+    at async Promise.all (index 6)
+    at async patchIncorrectLockfile [90m(/home/runner/workspace/[39mnode_modules/[4mnext[24m/dist/lib/patch-incorrect-lockfile.js:162:26[90m)[39m
+ [32m[1m✓[22m[39m Ready in 1719ms
+ [37m[1m○[22m[39m Compiling / ...
+ [32m[1m✓[22m[39m Compiled / in 4.5s (552 modules)
+ GET / [32m200[39m in 4700ms
+ [32m[1m✓[22m[39m Compiled /updates in 470ms (558 modules)
+ [32m[1m✓[22m[39m Compiled /donate in 245ms (556 modules)

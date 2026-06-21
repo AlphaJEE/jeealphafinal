@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'Dopis';
+    src: url('Dopis-Black.eot');
+    src: local('Dopis Black'), local('Dopis-Black'),
+        url('Dopis-Black.eot?#iefix') format('embedded-opentype'),
+        url('Dopis-Black.woff2') format('woff2'),
+        url('Dopis-Black.woff') format('woff'),
+        url('Dopis-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Dopis';
+    src: url('Dopis-BlackCondensed.eot');
+    src: local('Dopis Black Condensed'), local('Dopis-BlackCondensed'),
+        url('Dopis-BlackCondensed.eot?#iefix') format('embedded-opentype'),
+        url('Dopis-BlackCondensed.woff2') format('woff2'),
+        url('Dopis-BlackCondensed.woff') format('woff'),
+        url('Dopis-BlackCondensed.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Dopis';
+    src: url('Dopis-Regular.eot');
+    src: local('Dopis Regular'), local('Dopis-Regular'),
+        url('Dopis-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Dopis-Regular.woff2') format('woff2'),
+        url('Dopis-Regular.woff') format('woff'),
+        url('Dopis-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Dopis';
+    src: url('Dopis-Bold.eot');
+    src: local('Dopis Bold'), local('Dopis-Bold'),
+        url('Dopis-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Dopis-Bold.woff2') format('woff2'),
+        url('Dopis-Bold.woff') format('woff'),
+        url('Dopis-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Dopis';
+    src: url('Dopis-RegularCondensed.eot');
+    src: local('Dopis Regular Condensed'), local('Dopis-RegularCondensed'),
+        url('Dopis-RegularCondensed.eot?#iefix') format('embedded-opentype'),
+        url('Dopis-RegularCondensed.woff2') format('woff2'),
+        url('Dopis-RegularCondensed.woff') format('woff'),
+        url('Dopis-RegularCondensed.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Dopis';
+    src: url('Dopis-Light.eot');
+    src: local('Dopis Light'), local('Dopis-Light'),
+        url('Dopis-Light.eot?#iefix') format('embedded-opentype'),
+        url('Dopis-Light.woff2') format('woff2'),
+        url('Dopis-Light.woff') format('woff'),
+        url('Dopis-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Dopis';
+    src: url('Dopis-LightCondensed.eot');
+    src: local('Dopis Light Condensed'), local('Dopis-LightCondensed'),
+        url('Dopis-LightCondensed.eot?#iefix') format('embedded-opentype'),
+        url('Dopis-LightCondensed.woff2') format('woff2'),
+        url('Dopis-LightCondensed.woff') format('woff'),
+        url('Dopis-LightCondensed.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Dopis';
+    src: url('Dopis-BoldCondensed.eot');
+    src: local('Dopis Bold Condensed'), local('Dopis-BoldCondensed'),
+        url('Dopis-BoldCondensed.eot?#iefix') format('embedded-opentype'),
+        url('Dopis-BoldCondensed.woff2') format('woff2'),
+        url('Dopis-BoldCondensed.woff') format('woff'),
+        url('Dopis-BoldCondensed.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+

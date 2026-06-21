@@ -1,0 +1,52 @@
+{
+  "name": "Alpha JEE Tracker",
+  "short_name": "AlphaJEE",
+  "description": "The most trusted JEE shift-wise difficulty and result prediction mission.",
+  "categories": ["education", "utilities"],
+  "lang": "en",
+  "dir": "ltr",
+  "start_url": "/",
+  "id": "/",
+  "display": "standalone",
+  "display_override": ["window-controls-overlay", "standalone"],
+  "background_color": "#0d1117",
+  "theme_color": "#58a6ff",
+  "icons": [
+    {
+      "src": "./favicon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./favicon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "./favicon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "AlphaJEE Desktop Dashboard"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Predict Percentile",
+      "short_name": "Percentile",
+      "url": "/percentile.html",
+      "description": "Predict your JEE percentile based on shift difficulty"
+    },
+    {
+      "name": "Support Mission",
+      "short_name": "Donate",
+      "url": "/donate.html",
+      "description": "Help keep AlphaJEE ad-free and honest"
+    }
+  ],
+  "orientation": "portrait-primary"
+}

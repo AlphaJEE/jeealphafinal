@@ -1,0 +1,1 @@
+- [AlphaJEE Next.js migration](alphajee-nextjs.md) — key decisions: port 5000, suppressHydrationWarning on html+body, dangerouslySetInnerHTML for theme init (Script beforeInteractive crashes App Router)
