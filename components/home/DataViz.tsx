@@ -27,10 +27,10 @@ function PercentileCurve() {
 
   return (
     <div ref={ref} className="glass rounded-3xl p-6 sm:p-8">
-      <p className="font-akkurat text-[10px] uppercase tracking-[0.2em] text-[#9d937c] mb-1">
+      <p className="font-akkurat text-[10px] uppercase tracking-[0.2em] text-[var(--ovi-muted)] mb-1">
         The Curve
       </p>
-      <h3 className="font-season text-2xl sm:text-3xl text-[#0f0e0b] mb-6">
+      <h3 className="font-season text-2xl sm:text-3xl text-[var(--ovi-cream)] mb-6">
         Marks → Percentile
       </h3>
       <svg viewBox={`0 0 ${W} ${H}`} className="w-full h-auto">
@@ -63,7 +63,7 @@ function PercentileCurve() {
           ref={pathRef}
           d={curve.d}
           fill="none"
-          stroke="#0f0e0b"
+          stroke="var(--ovi-cream)"
           strokeWidth="3"
           strokeLinecap="round"
           className={`draw-path ${inView ? "is-drawn" : ""}`}
@@ -78,7 +78,7 @@ function PercentileCurve() {
               opacity={inView ? 1 : 0}
               style={{ transition: `opacity 0.6s ease ${1 + i * 0.25}s` }}
             >
-              <circle cx={pt.x} cy={pt.y} r="4" fill="#f9f9f0" stroke="#0f0e0b" strokeWidth="2" />
+              <circle cx={pt.x} cy={pt.y} r="4" fill="var(--ovi-bg)" stroke="var(--ovi-cream)" strokeWidth="2" />
               <text
                 x={pt.x}
                 y={pt.y - 12}
@@ -128,7 +128,7 @@ function RankBellCurve() {
       <p className="font-akkurat text-[10px] uppercase tracking-[0.2em] text-[#16a34a] mb-1">
         The Field
       </p>
-      <h3 className="font-season text-2xl sm:text-3xl text-[#0f0e0b] mb-6">
+      <h3 className="font-season text-2xl sm:text-3xl text-[var(--ovi-cream)] mb-6">
         Where you land
       </h3>
       <svg viewBox={`0 0 ${W} ${H}`} className="w-full h-auto">
@@ -164,14 +164,14 @@ function RankBellCurve() {
             x2={userX}
             y1={userY}
             y2={H - PAD}
-            stroke="#0f0e0b"
+            stroke="var(--ovi-cream)"
             strokeWidth="2"
             strokeDasharray="4 4"
           />
-          <circle cx={userX} cy={userY} r="6" fill="#0f0e0b" />
-          <circle cx={userX} cy={userY} r="11" fill="none" stroke="#0f0e0b" strokeOpacity="0.35" />
-          <rect x={userX - 22} y={userY - 34} width="44" height="20" rx="10" fill="#0f0e0b" />
-          <text x={userX} y={userY - 20} fill="#f9f9f0" fontSize="10" fontFamily="monospace" fontWeight="700" textAnchor="middle">
+          <circle cx={userX} cy={userY} r="6" fill="var(--ovi-cream)" />
+          <circle cx={userX} cy={userY} r="11" fill="none" stroke="var(--ovi-cream)" strokeOpacity="0.35" />
+          <rect x={userX - 22} y={userY - 34} width="44" height="20" rx="10" fill="var(--ovi-cream)" />
+          <text x={userX} y={userY - 20} fill="var(--ovi-bg)" fontSize="10" fontFamily="monospace" fontWeight="700" textAnchor="middle">
             YOU
           </text>
         </g>
@@ -191,10 +191,10 @@ export default function DataViz() {
   return (
     <section className="relative max-w-[1400px] mx-auto px-5 sm:px-8 py-24">
       <Reveal className="mb-14 max-w-2xl">
-        <p className="font-akkurat text-[11px] uppercase tracking-[0.25em] text-[#9d937c] mb-4">
+        <p className="font-akkurat text-[11px] uppercase tracking-[0.25em] text-[var(--ovi-muted)] mb-4">
           Data, visualised
         </p>
-        <h2 className="font-season text-[clamp(28px,3.6vw,50px)] leading-[1] text-[#0f0e0b]">
+        <h2 className="font-season text-[clamp(28px,3.6vw,50px)] leading-[1] text-[var(--ovi-cream)]">
           We don't describe the data. We draw it.
         </h2>
       </Reveal>

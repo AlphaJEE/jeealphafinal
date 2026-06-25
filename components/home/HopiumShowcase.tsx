@@ -45,20 +45,20 @@ export default function HopiumShowcase() {
     <section className="relative max-w-[1400px] mx-auto px-5 sm:px-8 py-24">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
         <Reveal className="lg:col-span-5">
-          <p className="font-akkurat text-[11px] uppercase tracking-[0.25em] text-[#9d937c] mb-4">
+          <p className="font-akkurat text-[11px] uppercase tracking-[0.25em] text-[var(--ovi-muted)] mb-4">
             The differentiator
           </p>
-          <h2 className="font-season text-[clamp(28px,3.6vw,48px)] leading-[1] text-[#0f0e0b] mb-5">
+          <h2 className="font-season text-[clamp(28px,3.6vw,48px)] leading-[1] text-[var(--ovi-cream)] mb-5">
             The Hopium Module.
           </h2>
-          <p className="text-[#21201c] text-lg leading-relaxed mb-6 font-season">
+          <p className="text-[var(--ovi-cream-dim)] text-lg leading-relaxed mb-6 font-season">
             Every other predictor hands you one number and hopes you believe it.
             We let you feel the uncertainty. Drag the variance and watch your
             best-case and worst-case ranks pull apart in real time — modelled on
             exam-day swing, not wishful thinking.
           </p>
           <div className="flex items-center gap-3">
-            <span className="font-akkurat text-[10px] uppercase tracking-[0.2em] text-[#9d937c]">
+            <span className="font-akkurat text-[10px] uppercase tracking-[0.2em] text-[var(--ovi-muted)]">
               Score
             </span>
             <input
@@ -70,7 +70,7 @@ export default function HopiumShowcase() {
               className="ovi-range flex-1"
               aria-label="Score"
             />
-            <span className="font-akkurat text-[#0f0e0b] text-sm font-bold tabular-nums w-10 text-right">
+            <span className="font-akkurat text-[var(--ovi-cream)] text-sm font-bold tabular-nums w-10 text-right">
               {marks}
             </span>
           </div>
@@ -90,10 +90,10 @@ export default function HopiumShowcase() {
                   </p>
                 </div>
                 <div className="text-center border-x border-[rgba(15,14,11,0.1)]">
-                  <p className="font-akkurat text-[9px] uppercase tracking-[0.2em] text-[#9d937c] mb-2">
+                  <p className="font-akkurat text-[9px] uppercase tracking-[0.2em] text-[var(--ovi-muted)] mb-2">
                     Expected
                   </p>
-                  <p className="font-akkurat text-[#0f0e0b] text-lg sm:text-2xl font-bold tabular-nums">
+                  <p className="font-akkurat text-[var(--ovi-cream)] text-lg sm:text-2xl font-bold tabular-nums">
                     {formatRank(disp.expected)}
                   </p>
                 </div>
@@ -125,7 +125,7 @@ export default function HopiumShowcase() {
               </div>
 
               <div className="flex items-center justify-between mt-7">
-                <span className="font-akkurat text-[10px] uppercase tracking-[0.2em] text-[#9d937c]">
+                <span className="font-akkurat text-[10px] uppercase tracking-[0.2em] text-[var(--ovi-muted)]">
                   Variance
                 </span>
                 <input
@@ -138,7 +138,7 @@ export default function HopiumShowcase() {
                   className="ovi-range mx-4 flex-1"
                   aria-label="Variance"
                 />
-                <span className="font-akkurat text-[#0f0e0b] text-sm font-bold tabular-nums w-12 text-right">
+                <span className="font-akkurat text-[var(--ovi-cream)] text-sm font-bold tabular-nums w-12 text-right">
                   ±{Math.round(variance * 100)}%
                 </span>
               </div>

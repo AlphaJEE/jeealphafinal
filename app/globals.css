@@ -679,8 +679,34 @@ body::before {
   --ovi-green-deep: #15803d;
   --ovi-line: rgba(15, 14, 11, 0.1);
   --ovi-line-strong: rgba(15, 14, 11, 0.22);
+  --ovi-hero: #d5fad3;        /* hero band bg */
+  --ovi-hero-grad: linear-gradient(90deg, #d5fad3 6%, rgba(213,250,211,0.85) 40%, rgba(213,250,211,0.35) 72%, rgba(213,250,211,0.6) 100%);
+  --ovi-glass: rgba(255, 255, 255, 0.55);
+  --ovi-glass-spot: rgba(15, 14, 11, 0.07);
+  --ovi-track: rgba(15, 14, 11, 0.12);
   background-color: var(--ovi-bg);
   color: var(--ovi-cream);
+}
+
+/* Night mode — homepage premium palette */
+.dark .home-premium {
+  --ovi-bg: #0a0a0a;
+  --ovi-bg-2: #111010;
+  --ovi-surface: #16140f;
+  --ovi-cream: #f2efe6;       /* ink -> light */
+  --ovi-cream-dim: #cfc8bd;
+  --ovi-muted: #8c857a;
+  --ovi-terra: #e2683b;
+  --ovi-terra-bright: #f0814f;
+  --ovi-green: #3f9468;
+  --ovi-green-deep: #2a6b4a;
+  --ovi-line: rgba(245, 242, 236, 0.1);
+  --ovi-line-strong: rgba(245, 242, 236, 0.2);
+  --ovi-hero: #0c130e;
+  --ovi-hero-grad: linear-gradient(90deg, #0c130e 6%, rgba(12,19,14,0.85) 40%, rgba(10,10,10,0.35) 72%, rgba(10,10,10,0.6) 100%);
+  --ovi-glass: rgba(245, 242, 236, 0.045);
+  --ovi-glass-spot: rgba(226, 104, 59, 0.14);
+  --ovi-track: rgba(245, 242, 236, 0.14);
 }
 
 /* Lenis smooth scroll plumbing */
@@ -732,9 +758,9 @@ html.lenis body {
   100% { background-position: 30% 20%, 70% 30%, 40% 60%, 20% 70%; transform: translateY(-3%); }
 }
 
-/* Frosted cards over the light base */
+/* Frosted cards — theme-aware */
 .glass {
-  background: rgba(255, 255, 255, 0.55);
+  background: var(--ovi-glass);
   backdrop-filter: blur(16px) saturate(120%);
   -webkit-backdrop-filter: blur(16px) saturate(120%);
   border: 1px solid var(--ovi-line);
@@ -758,7 +784,7 @@ html.lenis body {
   transition: opacity 0.3s ease;
   background: radial-gradient(
     340px circle at var(--mx, 50%) var(--my, 50%),
-    rgba(15, 14, 11, 0.07),
+    var(--ovi-glass-spot),
     transparent 60%
   );
   z-index: -1;
@@ -829,7 +855,7 @@ html.lenis body {
   width: 100%;
   height: 4px;
   border-radius: 999px;
-  background: rgba(15, 14, 11, 0.12);
+  background: var(--ovi-track);
   outline: none;
   cursor: grab;
 }
@@ -840,9 +866,9 @@ html.lenis body {
   width: 22px;
   height: 22px;
   border-radius: 50%;
-  background: #0f0e0b;
-  border: 4px solid #f9f9f0;
-  box-shadow: 0 0 0 6px rgba(15, 14, 11, 0.1), 0 6px 18px rgba(15, 14, 11, 0.18);
+  background: var(--ovi-cream);
+  border: 4px solid var(--ovi-bg);
+  box-shadow: 0 0 0 6px rgba(127, 116, 100, 0.18), 0 6px 18px rgba(0, 0, 0, 0.28);
   transition: transform 0.15s ease, box-shadow 0.2s ease;
 }
 .ovi-range::-webkit-slider-thumb:hover { transform: scale(1.12); }
@@ -850,8 +876,8 @@ html.lenis body {
   width: 22px;
   height: 22px;
   border-radius: 50%;
-  background: #0f0e0b;
-  border: 4px solid #f9f9f0;
+  background: var(--ovi-cream);
+  border: 4px solid var(--ovi-bg);
 }
 
 @media (prefers-reduced-motion: reduce) {

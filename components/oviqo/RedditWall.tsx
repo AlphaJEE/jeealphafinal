@@ -50,10 +50,10 @@ export default function RedditWall() {
         <p className="font-akkurat text-[11px] uppercase tracking-[0.25em] text-[#c8522a] mb-4">
           Featured on Reddit
         </p>
-        <h2 className="font-season text-[clamp(28px,3.6vw,50px)] leading-[1] text-[#0f0e0b]">
+        <h2 className="font-season text-[clamp(28px,3.6vw,50px)] leading-[1] text-[var(--ovi-cream)]">
           What the community is saying.
         </h2>
-        <p className="font-season text-[#3d3b34] text-lg leading-relaxed mt-4">
+        <p className="font-season text-[var(--ovi-cream-dim)] text-lg leading-relaxed mt-4">
           Real threads from across the JEE, NEET and counselling communities — live
           upvotes and comments, straight from Reddit.
         </p>
@@ -77,14 +77,14 @@ export default function RedditWall() {
               >
                 <span className="flex items-center gap-2 mb-3">
                   <RedditIcon className="w-5 h-5 text-[#ff4500]" />
-                  <span className="font-akkurat text-[9px] uppercase tracking-[0.16em] text-[#9d937c]">
+                  <span className="font-akkurat text-[9px] uppercase tracking-[0.16em] text-[var(--ovi-muted)]">
                     {p.sub}
                   </span>
                 </span>
-                <span className="font-season text-lg text-[#0f0e0b] leading-snug group-hover:text-[#c8522a] transition-colors block">
+                <span className="font-season text-lg text-[var(--ovi-cream)] leading-snug group-hover:text-[#c8522a] transition-colors block">
                   {p.title}
                 </span>
-                <span className="mt-4 inline-flex items-center gap-1.5 font-akkurat text-[10px] uppercase tracking-[0.2em] text-[#9d937c]">
+                <span className="mt-4 inline-flex items-center gap-1.5 font-akkurat text-[10px] uppercase tracking-[0.2em] text-[var(--ovi-muted)]">
                   View thread on Reddit ↗
                 </span>
               </a>

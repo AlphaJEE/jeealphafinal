@@ -16,9 +16,9 @@ type Member = {
 const team: Member[] = [
   {
     name: "Mohit Pratap Singh Rathore",
-    role: "Co-Founder & CEO",
-    tags: ["CEO", "HDYUAI", "Operations"],
-    bio: "Co-Founder at HDYUAI | Head of Operations at CollabClan | Student at Ramaiah Institute of Technology. Drives strategic growth and operational excellence across the AlphaJEE ecosystem.",
+    role: "Founder, Oviqo",
+    tags: ["CEO", "Oviqo", "EdTech"],
+    bio: "Founder, Oviqo | 180,000+ Students Served | 6.5M+ Interactions | Ovibattle • Alphajee • Oviguide | Building AI for Education",
     accent: "#badbee",
     image: "/team/mohit.jpg",
     linkedin: "https://www.linkedin.com/in/mohit-pratap-singh-rathore-428b0b27a/",
@@ -70,14 +70,14 @@ export default function Team() {
     <section id="team" className="relative max-w-[1400px] mx-auto px-5 sm:px-8 py-24">
       <Reveal className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-14">
         <div>
-          <p className="font-akkurat text-[11px] uppercase tracking-[0.25em] text-[#9d937c] mb-4">
+          <p className="font-akkurat text-[11px] uppercase tracking-[0.25em] text-[var(--ovi-muted)] mb-4">
             Core Team
           </p>
-          <h2 className="font-season text-[clamp(28px,3.6vw,50px)] leading-[1] text-[#0f0e0b]">
+          <h2 className="font-season text-[clamp(28px,3.6vw,50px)] leading-[1] text-[var(--ovi-cream)]">
             The Builders.
           </h2>
         </div>
-        <span className="font-akkurat text-[11px] uppercase tracking-[0.2em] text-[#9d937c]">
+        <span className="font-akkurat text-[11px] uppercase tracking-[0.2em] text-[var(--ovi-muted)]">
           {team.length} Members
         </span>
       </Reveal>
@@ -111,8 +111,8 @@ export default function Team() {
 
               {/* Content */}
               <div className="p-6 flex flex-col flex-1">
-                <h3 className="font-season text-2xl text-[#0f0e0b] leading-tight">{m.name}</h3>
-                <p className="font-akkurat text-[10px] uppercase tracking-[0.18em] text-[#9d937c] mt-1.5">
+                <h3 className="font-season text-2xl text-[var(--ovi-cream)] leading-tight">{m.name}</h3>
+                <p className="font-akkurat text-[10px] uppercase tracking-[0.18em] text-[var(--ovi-muted)] mt-1.5">
                   {m.role}
                 </p>
 
@@ -120,14 +120,14 @@ export default function Team() {
                   {m.tags.map((t) => (
                     <span
                       key={t}
-                      className="font-akkurat text-[9px] uppercase tracking-[0.12em] text-[#3d3b34] bg-[#0f0e0b]/[0.05] border border-[#0f0e0b]/10 rounded-full px-2.5 py-1"
+                      className="font-akkurat text-[9px] uppercase tracking-[0.12em] text-[var(--ovi-cream-dim)] bg-[#0f0e0b]/[0.05] border border-[var(--ovi-line)] rounded-full px-2.5 py-1"
                     >
                       {t}
                     </span>
                   ))}
                 </div>
 
-                <p className="font-season text-[15px] text-[#3d3b34] leading-relaxed mt-4">
+                <p className="font-season text-[15px] text-[var(--ovi-cream-dim)] leading-relaxed mt-4">
                   {m.bio}
                 </p>
 
@@ -136,7 +136,7 @@ export default function Team() {
                     href={m.linkedin}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-6 inline-flex items-center gap-2 font-akkurat text-[10px] uppercase tracking-[0.2em] text-[#9d937c] hover:text-[#0f0e0b] transition-colors"
+                    className="mt-6 inline-flex items-center gap-2 font-akkurat text-[10px] uppercase tracking-[0.2em] text-[var(--ovi-muted)] hover:text-[var(--ovi-cream)] transition-colors"
                   >
                     <LinkedInIcon className="w-4 h-4" />
                     LinkedIn

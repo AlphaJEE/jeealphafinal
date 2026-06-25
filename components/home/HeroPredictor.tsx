@@ -45,11 +45,11 @@ export default function HeroPredictor() {
               <span className="animate-ping absolute inline-flex h-2 w-2 rounded-full bg-[#0f0e0b] opacity-60" />
               <span className="relative inline-flex h-2 w-2 rounded-full bg-[#0f0e0b]" />
             </span>
-            <span className="font-akkurat text-[10px] uppercase tracking-[0.2em] text-[#9d937c]">
+            <span className="font-akkurat text-[10px] uppercase tracking-[0.2em] text-[var(--ovi-muted)]">
               Live · Alpha Engine
             </span>
           </div>
-          <span className="font-akkurat text-[10px] uppercase tracking-[0.2em] text-[#9d937c]">
+          <span className="font-akkurat text-[10px] uppercase tracking-[0.2em] text-[var(--ovi-muted)]">
             JEE Main
           </span>
         </div>
@@ -57,21 +57,21 @@ export default function HeroPredictor() {
         {/* Big readout */}
         <div className="flex items-end justify-between gap-4 mb-5">
           <div>
-            <p className="font-akkurat text-[10px] uppercase tracking-[0.2em] text-[#9d937c] mb-1">
+            <p className="font-akkurat text-[10px] uppercase tracking-[0.2em] text-[var(--ovi-muted)] mb-1">
               Estimated Percentile
             </p>
-            <div className="font-season leading-none text-[#0f0e0b] tabular-nums">
+            <div className="font-season leading-none text-[var(--ovi-cream)] tabular-nums">
               <span className="text-[clamp(42px,5vw,62px)] font-semibold">
                 {pct.toFixed(pct >= 99.9 ? 3 : 2)}
               </span>
-              <span className="text-[#9d937c] text-2xl font-semibold ml-1">%</span>
+              <span className="text-[var(--ovi-muted)] text-2xl font-semibold ml-1">%</span>
             </div>
           </div>
           <div className="text-right">
-            <p className="font-akkurat text-[10px] uppercase tracking-[0.2em] text-[#9d937c] mb-1">
+            <p className="font-akkurat text-[10px] uppercase tracking-[0.2em] text-[var(--ovi-muted)] mb-1">
               Est. AIR
             </p>
-            <p className="font-akkurat text-[#0f0e0b] text-xl sm:text-2xl font-bold tabular-nums">
+            <p className="font-akkurat text-[var(--ovi-cream)] text-xl sm:text-2xl font-bold tabular-nums">
               {formatRank(rank)}
             </p>
           </div>
@@ -124,7 +124,7 @@ export default function HeroPredictor() {
             <path
               d={curve.d}
               fill="none"
-              stroke="#0f0e0b"
+              stroke="var(--ovi-cream)"
               strokeWidth="2.5"
               clipPath="url(#hp-clip)"
             />
@@ -142,23 +142,23 @@ export default function HeroPredictor() {
 
             {/* moving point */}
             <circle cx={pt.x} cy={pt.y} r="9" fill="rgba(15,14,11,0.1)" />
-            <circle cx={pt.x} cy={pt.y} r="4.5" fill="#f9f9f0" stroke="#0f0e0b" strokeWidth="2.5" />
+            <circle cx={pt.x} cy={pt.y} r="4.5" fill="var(--ovi-bg)" stroke="var(--ovi-cream)" strokeWidth="2.5" />
           </svg>
           <div className="flex justify-between mt-1 px-1">
-            <span className="font-akkurat text-[9px] text-[#9d937c]">0</span>
-            <span className="font-akkurat text-[9px] text-[#9d937c]">marks →</span>
-            <span className="font-akkurat text-[9px] text-[#9d937c]">300</span>
+            <span className="font-akkurat text-[9px] text-[var(--ovi-muted)]">0</span>
+            <span className="font-akkurat text-[9px] text-[var(--ovi-muted)]">marks →</span>
+            <span className="font-akkurat text-[9px] text-[var(--ovi-muted)]">300</span>
           </div>
         </div>
 
         {/* Slider control */}
         <div className="mt-5">
           <div className="flex items-center justify-between mb-2">
-            <span className="font-akkurat text-[10px] uppercase tracking-[0.2em] text-[#9d937c]">
+            <span className="font-akkurat text-[10px] uppercase tracking-[0.2em] text-[var(--ovi-muted)]">
               Drag your marks
             </span>
-            <span className="font-akkurat text-[#0f0e0b] text-sm font-bold tabular-nums">
-              {Math.round(targetMarks)} <span className="text-[#9d937c]">/ 300</span>
+            <span className="font-akkurat text-[var(--ovi-cream)] text-sm font-bold tabular-nums">
+              {Math.round(targetMarks)} <span className="text-[var(--ovi-muted)]">/ 300</span>
             </span>
           </div>
           <input

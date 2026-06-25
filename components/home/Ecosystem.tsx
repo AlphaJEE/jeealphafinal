@@ -103,7 +103,7 @@ function ProductCard({ p }: { p: Product }) {
 
         {/* logo + tag */}
         <div className="relative flex items-center gap-3 mb-7">
-          <div className="relative w-[52px] h-[52px] rounded-xl bg-white border border-[#0f0e0b]/10 flex items-center justify-center overflow-hidden flex-shrink-0">
+          <div className="relative w-[52px] h-[52px] rounded-xl bg-white border border-[var(--ovi-line)] flex items-center justify-center overflow-hidden flex-shrink-0">
             <span className="font-season text-base text-[#0f0e0b]/45">{p.title[0]}</span>
             {p.logo && (
               // eslint-disable-next-line @next/next/no-img-element
@@ -128,10 +128,10 @@ function ProductCard({ p }: { p: Product }) {
         </div>
 
         {/* title + desc */}
-        <h3 className="relative font-season text-[clamp(28px,3vw,38px)] text-[#0f0e0b] leading-none mb-4">
+        <h3 className="relative font-season text-[clamp(28px,3vw,38px)] text-[var(--ovi-cream)] leading-none mb-4">
           {p.title}
         </h3>
-        <p className="relative font-season text-[15px] text-[#3d3b34] leading-relaxed max-w-md flex-1">
+        <p className="relative font-season text-[15px] text-[var(--ovi-cream-dim)] leading-relaxed max-w-md flex-1">
           {p.desc}
         </p>
 
@@ -139,14 +139,14 @@ function ProductCard({ p }: { p: Product }) {
         <div className="relative mt-7 flex items-end justify-between gap-3">
           <Action
             {...actionProps}
-            className="inline-flex items-center gap-1.5 font-akkurat text-[10px] uppercase tracking-[0.2em] font-bold text-[#0f0e0b] hover:gap-2.5 transition-all"
+            className="inline-flex items-center gap-1.5 font-akkurat text-[10px] uppercase tracking-[0.2em] font-bold text-[var(--ovi-cream)] hover:gap-2.5 transition-all"
           >
             {p.action}
             <Arrow />
           </Action>
           <div className="flex items-center gap-2 text-right">
             {p.domain && (
-              <span className="font-akkurat text-[10px] text-[#9d937c]">{p.domain}</span>
+              <span className="font-akkurat text-[10px] text-[var(--ovi-muted)]">{p.domain}</span>
             )}
             {p.badge && (
               <span className="font-akkurat text-[8px] uppercase tracking-[0.14em] text-[#15803d] bg-[#cfe8d8]/60 rounded-full px-2 py-0.5">
@@ -162,7 +162,7 @@ function ProductCard({ p }: { p: Product }) {
 
 export default function Ecosystem() {
   return (
-    <section id="oviqo" className="relative bg-[#f0efe6]">
+    <section id="oviqo" className="relative bg-[var(--ovi-bg-2)]">
       <div className="max-w-[1400px] mx-auto px-5 sm:px-8 py-24">
         {/* Header */}
         <Reveal className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end mb-10">
@@ -170,13 +170,13 @@ export default function Ecosystem() {
             <p className="font-akkurat text-[11px] uppercase tracking-[0.25em] text-[#2a6b4a] mb-4">
               The Oviqo Ecosystem
             </p>
-            <h2 className="font-season text-[clamp(34px,5vw,72px)] leading-[0.96] text-[#0f0e0b]">
+            <h2 className="font-season text-[clamp(34px,5vw,72px)] leading-[0.96] text-[var(--ovi-cream)]">
               Four products.
               <br />
               <span className="italic text-[#2a6b4a]">One mission.</span>
             </h2>
           </div>
-          <p className="lg:col-span-5 font-season text-[#3d3b34] text-lg leading-relaxed">
+          <p className="lg:col-span-5 font-season text-[var(--ovi-cream-dim)] text-lg leading-relaxed">
             From rank prediction to choice lists to head-to-head practice — the
             Oviqo family covers every step from your first mock test to your final
             college lock.
@@ -219,17 +219,17 @@ export default function Ecosystem() {
                     href={post.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="block glass rounded-2xl p-6 h-full hover:border-[#0f0e0b]/20 transition-colors group"
+                    className="block glass rounded-2xl p-6 h-full hover:border-[var(--ovi-line-strong)] transition-colors group"
                   >
                     <div className="flex items-center gap-2 mb-3">
                       <svg viewBox="0 0 24 24" fill="#ff4500" className="w-5 h-5" aria-hidden="true">
                         <path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701z" />
                       </svg>
-                      <span className="font-akkurat text-[9px] uppercase tracking-[0.16em] text-[#9d937c]">
+                      <span className="font-akkurat text-[9px] uppercase tracking-[0.16em] text-[var(--ovi-muted)]">
                         {post.sub || "r/alphajee"}
                       </span>
                     </div>
-                    <p className="font-season text-[#0f0e0b] leading-snug group-hover:text-[#c8522a] transition-colors">
+                    <p className="font-season text-[var(--ovi-cream)] leading-snug group-hover:text-[#c8522a] transition-colors">
                       {post.title}
                     </p>
                   </a>

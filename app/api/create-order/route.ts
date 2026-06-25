@@ -1,5 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 
+export const runtime = 'edge';
+
 export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
@@ -27,7 +29,7 @@ export async function POST(req: NextRequest) {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        Authorization: `Basic ${Buffer.from(`${keyId}:${keySecret}`).toString('base64')}`,
+        Authorization: `Basic ${btoa(`${keyId}:${keySecret}`)}`,
       },
       body: JSON.stringify(orderData),
     });

@@ -40,7 +40,7 @@ export default function Hero() {
 
   return (
     <section
-      className="relative overflow-hidden bg-[#d5fad3] flex flex-col"
+      className="relative overflow-hidden bg-[var(--ovi-hero)] flex flex-col"
       style={{ minHeight: "calc(100svh - 48px)" }}
     >
       {/* cinematic IIT Bombay backdrop — Ken Burns + parallax */}
@@ -60,7 +60,7 @@ export default function Hero() {
         />
         <div className="ken-burns w-[80%] lg:w-[58%] -mr-[6%]">
           <IITBombaySketch
-            className="w-full text-[#0f0e0b] opacity-[0.13]"
+            className="w-full text-[var(--ovi-cream)] opacity-[0.13]"
             style={{ maxHeight: "640px" }}
           />
         </div>
@@ -68,10 +68,7 @@ export default function Hero() {
       {/* readability gradient */}
       <div
         className="absolute inset-0 z-[1] pointer-events-none"
-        style={{
-          background:
-            "linear-gradient(90deg, #d5fad3 6%, rgba(213,250,211,0.85) 40%, rgba(213,250,211,0.35) 72%, rgba(213,250,211,0.6) 100%)",
-        }}
+        style={{ background: "var(--ovi-hero-grad)" }}
       />
 
       <div className="relative z-10 flex-1 flex items-center w-full pt-[92px] pb-[48px]">
@@ -102,58 +99,58 @@ export default function Hero() {
               </svg>
             </a>
 
-            <h1 className="font-season text-[clamp(40px,5.4vw,76px)] leading-[0.95] tracking-[-0.02em] text-[#0f0e0b] mb-7 anim-fade-up anim-fade-up-d1">
+            <h1 className="font-season text-[clamp(40px,5.4vw,76px)] leading-[0.95] tracking-[-0.02em] text-[var(--ovi-cream)] mb-7 anim-fade-up anim-fade-up-d1">
               The Free JEE
               <br />
               <span className="italic">Ecosystem.</span>
             </h1>
 
-            <p className="font-season text-[#21201c] text-xl max-w-md leading-relaxed mb-9 anim-fade-up anim-fade-up-d2">
+            <p className="font-season text-[var(--ovi-cream-dim)] text-xl max-w-md leading-relaxed mb-9 anim-fade-up anim-fade-up-d2">
               Don't read about a predictor. Use one. Drag your marks and watch
               your percentile move — instantly, no login, no paywalls.
             </p>
 
             <div className="flex flex-wrap items-center gap-3 anim-fade-up anim-fade-up-d3">
               <Magnetic strength={0.35}>
-                <Link href="/advanced" className="btn-primary" style={{ backgroundColor: "#0f0e0b", color: "#f9f9f0" }}>
+                <Link href="/advanced" className="btn-primary" style={{ backgroundColor: "var(--ovi-cream)", color: "var(--ovi-bg)", borderColor: "var(--ovi-cream)" }}>
                   JEE Advanced Rank
                 </Link>
               </Magnetic>
               <Magnetic strength={0.3}>
-                <Link href="/oviqo" className="btn-outline" style={{ borderColor: "#0f0e0b" }}>
+                <Link href="/oviqo" className="btn-outline" style={{ borderColor: "var(--ovi-cream)", color: "var(--ovi-cream)" }}>
                   The Oviqo Family
                 </Link>
               </Magnetic>
             </div>
 
             {/* count-up stats */}
-            <div className="flex items-center gap-7 mt-[clamp(28px,4vh,44px)] pt-7 border-t border-[#0f0e0b]/12 anim-fade-up anim-fade-up-d4">
+            <div className="flex items-center gap-7 mt-[clamp(28px,4vh,44px)] pt-7 border-t border-[var(--ovi-line)] anim-fade-up anim-fade-up-d4">
               <div>
-                <p className="font-season text-3xl sm:text-4xl font-semibold text-[#0f0e0b] tabular-nums">
+                <p className="font-season text-3xl sm:text-4xl font-semibold text-[var(--ovi-cream)] tabular-nums">
                   <CountUp to={1} duration={1400} />
-                  <span className="text-[#9d937c]"> Lakh+</span>
+                  <span className="text-[var(--ovi-muted)]"> Lakh+</span>
                 </p>
-                <p className="font-akkurat text-[9px] uppercase tracking-[0.2em] text-[#3d3b34] mt-1">
+                <p className="font-akkurat text-[9px] uppercase tracking-[0.2em] text-[var(--ovi-cream-dim)] mt-1">
                   Users
                 </p>
               </div>
-              <div className="w-px h-10 bg-[#0f0e0b]/12" />
+              <div className="w-px h-10 bg-[var(--ovi-line)]" />
               <div>
-                <p className="font-season text-3xl sm:text-4xl font-semibold text-[#0f0e0b] tabular-nums">
+                <p className="font-season text-3xl sm:text-4xl font-semibold text-[var(--ovi-cream)] tabular-nums">
                   <CountUp to={2} duration={1600} />
-                  <span className="text-[#9d937c]">M+</span>
+                  <span className="text-[var(--ovi-muted)]">M+</span>
                 </p>
-                <p className="font-akkurat text-[9px] uppercase tracking-[0.2em] text-[#3d3b34] mt-1">
+                <p className="font-akkurat text-[9px] uppercase tracking-[0.2em] text-[var(--ovi-cream-dim)] mt-1">
                   Predictions
                 </p>
               </div>
-              <div className="w-px h-10 bg-[#0f0e0b]/12" />
+              <div className="w-px h-10 bg-[var(--ovi-line)]" />
               <div>
-                <p className="font-season text-3xl sm:text-4xl font-semibold text-[#0f0e0b] tabular-nums">
+                <p className="font-season text-3xl sm:text-4xl font-semibold text-[var(--ovi-cream)] tabular-nums">
                   <CountUp to={97} duration={1800} />
-                  <span className="text-[#9d937c]">%</span>
+                  <span className="text-[var(--ovi-muted)]">%</span>
                 </p>
-                <p className="font-akkurat text-[9px] uppercase tracking-[0.2em] text-[#3d3b34] mt-1">
+                <p className="font-akkurat text-[9px] uppercase tracking-[0.2em] text-[var(--ovi-cream-dim)] mt-1">
                   Accuracy
                 </p>
               </div>
@@ -174,10 +171,10 @@ export default function Hero() {
           {[...marqueeItems, ...marqueeItems].map(([v, l], i) => (
             <div key={i} className="flex items-center gap-3 flex-shrink-0">
               <span className="font-akkurat text-[#d5fad3] text-[13px] font-bold">{v}</span>
-              <span className="font-akkurat text-[9px] text-[#9d937c] uppercase tracking-[0.2em]">
+              <span className="font-akkurat text-[9px] text-[var(--ovi-muted)] uppercase tracking-[0.2em]">
                 {l}
               </span>
-              <span className="text-[#3d3b34] mx-1 select-none">·</span>
+              <span className="text-[var(--ovi-cream-dim)] mx-1 select-none">·</span>
             </div>
           ))}
         </div>
