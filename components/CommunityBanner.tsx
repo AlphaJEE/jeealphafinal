@@ -27,7 +27,7 @@ export default function CommunityBanner() {
         </div>
         <div className="min-w-0">
           <p className="text-code-label text-[#f9f9f0] uppercase tracking-widest">Join the Community</p>
-          <p className="text-body-small text-[#9d937c] hidden sm:block">Connect with fellow aspirants on Reddit &amp; Discord</p>
+          <p className="text-body-small text-[#9d937c] hidden sm:block">Connect with us on Reddit &amp; LinkedIn</p>
         </div>
       </div>
       <div className="flex items-center gap-3 flex-shrink-0">
@@ -41,13 +41,13 @@ export default function CommunityBanner() {
           r/alphajee
         </a>
         <a
-          href="https://discord.gg/QYzZcMDBHY"
+          href="https://www.linkedin.com/company/oviguide/"
           target="_blank"
           rel="noopener noreferrer"
           className="text-code-micro uppercase tracking-widest px-4 py-1.5 border border-[#f9f9f0]/30 bg-[#f9f9f0]/10 hover:bg-[#f9f9f0]/20 transition-colors text-[#f9f9f0]"
           style={{ borderRadius: '9999px' }}
         >
-          Discord
+          OviGuide
         </a>
         <button
           onClick={dismiss}

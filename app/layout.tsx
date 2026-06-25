@@ -12,16 +12,20 @@ export const metadata: Metadata = {
   keywords:
     "free jee predictor, jee advanced rank predictor, iit jee rank calculator, free neet rank predictor, jee main score calculator, marks vs percentile jee, alphajee official",
   authors: [{ name: "AlphaJEE Syndicate" }],
+  metadataBase: new URL("https://www.alphajee.com"),
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     type: "website",
     siteName: "AlphaJEE Official",
-    url: "https://alphajee.com/",
+    url: "https://www.alphajee.com/",
     title: "AlphaJEE — The Ultimate Free JEE Ecosystem",
     description:
       "Calculate raw scores, predict exact percentiles, and estimate All India Ranks. 100% Free forever.",
     images: [
       {
-        url: "https://alphajee.com/official-banner.png",
+        url: "https://www.alphajee.com/official-banner.png",
         width: 1200,
         height: 630,
       },
@@ -32,10 +36,11 @@ export const metadata: Metadata = {
     title: "AlphaJEE — Ultimate Free JEE Predictor",
     description:
       "Instant JEE Percentiles and IIT JEE Advanced Ranks. Zero paywalls.",
-    images: ["https://alphajee.com/official-banner.png"],
+    images: ["https://www.alphajee.com/official-banner.png"],
   },
   robots: "index, follow, max-image-preview:large",
   icons: { icon: "/favicon.png" },
+  manifest: "/manifest.json",
 };
 
 export default function RootLayout({

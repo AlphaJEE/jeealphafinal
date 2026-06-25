@@ -431,13 +431,6 @@ export default function AdvancedPage() {
                 </p>
               </div>
             </div>
-
-            <div className="mt-24 mb-12 text-center px-6">
-              <div className="inline-block p-[1px] bg-gradient-to-r from-transparent via-blue-500 to-transparent opacity-50 w-full max-w-2xl mb-8"></div>
-              <p className="text-[#9d937c] text-xs italic font-medium tracking-wide leading-relaxed max-w-xl mx-auto opacity-80">
-                "To Rakshit: I hope you're reading this. I know the pressure is heavy, but you've done great, more than any score could ever show. I wish you were here to fight the battle. I'm still here if you need to talk, and I hope you find your way back and not lose yourself pleaseeee."
-              </p>
-            </div>
           </div>
         </div>
 

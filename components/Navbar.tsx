@@ -10,9 +10,8 @@ const navLinks = [
   { href: "/percentile", label: "JEE Main" },
   { href: "/advanced", label: "JEE Advanced" },
   { href: "/neet", label: "NEET" },
-  { href: "/analytics", label: "Analytics" },
-  { href: "/legends", label: "Legends" },
-  { href: "/updates", label: "Updates" },
+  { href: "/oviqo", label: "Oviqo" },
+  { href: "/#team", label: "Team" },
 ];
 
 export default function Navbar() {
@@ -104,6 +103,12 @@ export default function Navbar() {
               }}
             >
               AlphaJEE
+              <span
+                className="text-[#9d937c] ml-1.5 text-[12px]"
+                style={{ fontWeight: 400 }}
+              >
+                by OviGuide
+              </span>
             </span>
           </div>
         </Link>
@@ -148,8 +153,10 @@ export default function Navbar() {
               {dark ? <SunIcon /> : <MoonIcon />}
             </button>
           )}
-          <Link
-            href="/donate"
+          <a
+            href="https://oviguide.in"
+            target="_blank"
+            rel="noopener noreferrer"
             className="btn-primary"
             style={{
               height: "36px",
@@ -158,8 +165,15 @@ export default function Navbar() {
               fontSize: "11px",
             }}
           >
-            Support Us
-          </Link>
+            OviGuide
+            <svg width="11" height="11" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path
+                fillRule="evenodd"
+                d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                clipRule="evenodd"
+              />
+            </svg>
+          </a>
         </div>
       </nav>
 
@@ -178,13 +192,14 @@ export default function Navbar() {
               className="rounded-sm"
             />
             <span
-              className="font-dopis text-[15px] font-light text-[#0f0e0b] dark:text-[#f9f9f0]"
+              className="font-dopis text-[15px] font-light text-[#0f0e0b] dark:text-[#f9f9f0] whitespace-nowrap"
               style={{
                 fontFamily: "Dopis Light, Dopis, sans-serif",
                 fontWeight: 300,
               }}
             >
               AlphaJEE
+              <span className="text-[#9d937c] ml-1.5 text-[12px]">by OviGuide</span>
             </span>
           </Link>
           <div className="flex items-center gap-1">
@@ -265,14 +280,23 @@ export default function Navbar() {
                 );
               })}
               <div className="px-4 pt-2 pb-3 border-t border-[#0f0e0b]/10 dark:border-[#f9f9f0]/10 mt-1">
-                <Link
-                  href="/donate"
+                <a
+                  href="https://oviguide.in"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   onClick={() => setMobileOpen(false)}
                   className="btn-primary w-full justify-center"
                   style={{ borderRadius: "8px" }}
                 >
-                  Support Us
-                </Link>
+                  OviGuide
+                  <svg width="11" height="11" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path
+                      fillRule="evenodd"
+                      d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                </a>
               </div>
             </div>
           </div>
