@@ -2,11 +2,11 @@
 User-agent: *
 Allow: /
 
-# Specific focus for the score subdomain
-Host: https://alphajee.online
+# Canonical host for the main site
+Host: https://www.alphajee.com
 
 # Point Google directly to your maps for faster crawling
-Sitemap: https://alphajee.online/sitemap.xml
+Sitemap: https://www.alphajee.com/sitemap.xml
 Sitemap: https://score.alphajee.online/sitemap.xml
 Sitemap: https://jtestify.alphajee.online/sitemap.xml
 

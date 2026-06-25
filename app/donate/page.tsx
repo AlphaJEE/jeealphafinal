@@ -312,7 +312,7 @@ export default function DonatePage() {
                   type="text"
                   value={handle}
                   onChange={(e) => setHandle(e.target.value)}
-                  placeholder="e.g. u/username or @discord"
+                  placeholder="e.g. u/username or @handle"
                   className="w-full p-3 border border-[#0f0e0b]/20 dark:border-[#f9f9f0]/20 bg-transparent text-[#0f0e0b] dark:text-[#f9f9f0] text-body-base focus:outline-none focus:border-[#0f0e0b] dark:focus:border-[#f9f9f0] transition-colors"
                 />
               </div>

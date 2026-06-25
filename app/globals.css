@@ -662,3 +662,231 @@ body::before {
 .tool-card:hover {
   transform: translateY(-2px);
 }
+
+/* ============================================================
+   PREMIUM HOMEPAGE — OviGuide dark editorial system
+   ============================================================ */
+.home-premium {
+  --ovi-bg: #f9f9f0;
+  --ovi-bg-2: #f0efe6;
+  --ovi-surface: #ffffff;
+  --ovi-cream: #0f0e0b;       /* primary ink (light theme) */
+  --ovi-cream-dim: #3d3b34;
+  --ovi-muted: #9d937c;
+  --ovi-terra: #c8522a;       /* OviGuide brand accent (kept) */
+  --ovi-terra-bright: #b8531a;
+  --ovi-green: #16a34a;
+  --ovi-green-deep: #15803d;
+  --ovi-line: rgba(15, 14, 11, 0.1);
+  --ovi-line-strong: rgba(15, 14, 11, 0.22);
+  --ovi-hero: #d5fad3;        /* hero band bg */
+  --ovi-hero-grad: linear-gradient(90deg, #d5fad3 6%, rgba(213,250,211,0.85) 40%, rgba(213,250,211,0.35) 72%, rgba(213,250,211,0.6) 100%);
+  --ovi-glass: rgba(255, 255, 255, 0.55);
+  --ovi-glass-spot: rgba(15, 14, 11, 0.07);
+  --ovi-track: rgba(15, 14, 11, 0.12);
+  background-color: var(--ovi-bg);
+  color: var(--ovi-cream);
+}
+
+/* Night mode — homepage premium palette */
+.dark .home-premium {
+  --ovi-bg: #0a0a0a;
+  --ovi-bg-2: #111010;
+  --ovi-surface: #16140f;
+  --ovi-cream: #f2efe6;       /* ink -> light */
+  --ovi-cream-dim: #cfc8bd;
+  --ovi-muted: #8c857a;
+  --ovi-terra: #e2683b;
+  --ovi-terra-bright: #f0814f;
+  --ovi-green: #3f9468;
+  --ovi-green-deep: #2a6b4a;
+  --ovi-line: rgba(245, 242, 236, 0.1);
+  --ovi-line-strong: rgba(245, 242, 236, 0.2);
+  --ovi-hero: #0c130e;
+  --ovi-hero-grad: linear-gradient(90deg, #0c130e 6%, rgba(12,19,14,0.85) 40%, rgba(10,10,10,0.35) 72%, rgba(10,10,10,0.6) 100%);
+  --ovi-glass: rgba(245, 242, 236, 0.045);
+  --ovi-glass-spot: rgba(226, 104, 59, 0.14);
+  --ovi-track: rgba(245, 242, 236, 0.14);
+}
+
+/* Lenis smooth scroll plumbing */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+/* Film grain — kills the flat digital look */
+.grain-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 40;
+  opacity: 0.05;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 240 240' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 200px 200px;
+}
+
+/* Aurora / animated gradient-mesh glow behind the hero */
+.aurora {
+  position: absolute;
+  inset: -20% -10% auto -10%;
+  height: 130%;
+  pointer-events: none;
+  z-index: 0;
+  filter: blur(70px);
+  opacity: 0.55;
+  background:
+    radial-gradient(40% 50% at 20% 25%, rgba(200, 82, 42, 0.40), transparent 70%),
+    radial-gradient(45% 55% at 80% 20%, rgba(42, 107, 74, 0.34), transparent 70%),
+    radial-gradient(50% 45% at 60% 70%, rgba(200, 82, 42, 0.20), transparent 70%),
+    radial-gradient(40% 40% at 30% 80%, rgba(20, 57, 39, 0.30), transparent 70%);
+  background-size: 200% 200%;
+  animation: aurora-drift 22s ease-in-out infinite alternate;
+}
+@keyframes aurora-drift {
+  0%   { background-position: 0% 0%, 100% 0%, 50% 100%, 0% 100%; transform: translateY(0); }
+  100% { background-position: 30% 20%, 70% 30%, 40% 60%, 20% 70%; transform: translateY(-3%); }
+}
+
+/* Frosted cards — theme-aware */
+.glass {
+  background: var(--ovi-glass);
+  backdrop-filter: blur(16px) saturate(120%);
+  -webkit-backdrop-filter: blur(16px) saturate(120%);
+  border: 1px solid var(--ovi-line);
+  border-radius: 20px;
+  box-shadow: 0 1px 2px rgba(15, 14, 11, 0.04);
+}
+
+/* Spotlight glow that tracks the cursor (var set in JS) */
+.spotlight {
+  position: relative;
+  isolation: isolate;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease;
+  will-change: transform;
+}
+.spotlight::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  background: radial-gradient(
+    340px circle at var(--mx, 50%) var(--my, 50%),
+    var(--ovi-glass-spot),
+    transparent 60%
+  );
+  z-index: -1;
+}
+.spotlight:hover::before { opacity: 1; }
+.spotlight:hover { border-color: var(--ovi-line-strong); }
+
+/* Animated gradient border for the hero focal card */
+.gradient-ring {
+  position: relative;
+  border-radius: 24px;
+}
+.gradient-ring::after {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(135deg, var(--ovi-terra), transparent 35%, transparent 65%, rgba(15, 14, 11, 0.35));
+  background-size: 300% 300%;
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  animation: ring-rotate 8s linear infinite;
+  pointer-events: none;
+}
+@keyframes ring-rotate {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 300% 50%; }
+}
+
+/* Ken Burns slow zoom for the hero image */
+.ken-burns {
+  animation: ken-burns 28s ease-in-out infinite alternate;
+  will-change: transform;
+}
+@keyframes ken-burns {
+  0%   { transform: scale(1) translate3d(0, 0, 0); }
+  100% { transform: scale(1.12) translate3d(-1.5%, -1.5%, 0); }
+}
+
+/* Scroll reveal — JS toggles .is-visible */
+.reveal {
+  opacity: 0;
+  transform: translateY(34px);
+  transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1), transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* SVG self-drawing path — JS toggles .is-drawn */
+.draw-path {
+  stroke-dasharray: var(--path-len, 1200);
+  stroke-dashoffset: var(--path-len, 1200);
+  transition: stroke-dashoffset 1.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.draw-path.is-drawn {
+  stroke-dashoffset: 0;
+}
+
+/* Premium range slider (hero predictor + hopium showcase) */
+.ovi-range {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 4px;
+  border-radius: 999px;
+  background: var(--ovi-track);
+  outline: none;
+  cursor: grab;
+}
+.ovi-range:active { cursor: grabbing; }
+.ovi-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--ovi-cream);
+  border: 4px solid var(--ovi-bg);
+  box-shadow: 0 0 0 6px rgba(127, 116, 100, 0.18), 0 6px 18px rgba(0, 0, 0, 0.28);
+  transition: transform 0.15s ease, box-shadow 0.2s ease;
+}
+.ovi-range::-webkit-slider-thumb:hover { transform: scale(1.12); }
+.ovi-range::-moz-range-thumb {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--ovi-cream);
+  border: 4px solid var(--ovi-bg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .aurora, .ken-burns, .gradient-ring::after { animation: none; }
+  .reveal { opacity: 1; transform: none; transition: none; }
+  .draw-path { stroke-dashoffset: 0; transition: none; }
+  .anim-fade-up, .anim-fade-in, .anim-scale-in {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+  }
+}

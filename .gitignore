@@ -36,3 +36,9 @@ Thumbs.db
 wrangler.toml
 .vercel
 .env*.local
+
+# local dev/build junk
+dev.log
+*.log
+/tsconfig.tsbuildinfo
+.pptr-*/

@@ -319,12 +319,6 @@ export default function PercentilePage() {
               </div>
             ))}
           </div>
-
-          <div className="mt-16 text-center max-w-2xl mx-auto border border-[#0f0e0b]/10 dark:border-[#f9f9f0]/10 p-10">
-            <p className="text-body-base text-[#9d937c] italic leading-relaxed">
-              "To M: I hope you're reading this. I know the pressure is heavy, but you've done great, more than any score could ever show. I'm still here if you need to talk. I hope you find your way back and not lose yourself pleaseeee."
-            </p>
-          </div>
         </div>
       </div>
     </div>
