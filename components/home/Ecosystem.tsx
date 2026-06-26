@@ -32,7 +32,7 @@ const products: Product[] = [
     external: false,
     domain: "alphajee.com",
     badge: "Part of OviGuide",
-    logo: "/favicon.png",
+    logo: "/ecosystem/alphajee.png",
   },
   {
     n: "02",
@@ -45,7 +45,7 @@ const products: Product[] = [
     href: "https://oviguide.in",
     external: true,
     domain: "oviguide.in",
-    logo: "/ecosystem/oviguide.jpeg",
+    logo: "/ecosystem/oviguide.png",
   },
   {
     n: "03",
@@ -58,7 +58,7 @@ const products: Product[] = [
     href: "https://ovibattle.in",
     external: true,
     domain: "ovibattle.in",
-    logo: "/ecosystem/ovibattle.png",
+    logo: "/ecosystem/ovibattle2.png",
   },
   {
     n: "04",
@@ -72,7 +72,7 @@ const products: Product[] = [
     external: false,
     domain: "alphajee.com",
     badge: "Part of OviGuide",
-    logo: "/favicon.png",
+    logo: "/ecosystem/alphajee.png",
   },
 ];
 
@@ -110,7 +110,7 @@ function ProductCard({ p }: { p: Product }) {
               <img
                 src={p.logo}
                 alt={p.title}
-                className="absolute inset-[7px] object-contain"
+                className="absolute inset-[6px] object-contain"
                 ref={(node) => {
                   // hide if the file is missing/broken (covers the SSR-hydration race)
                   if (node && node.complete && node.naturalWidth === 0) node.style.display = "none";
